@@ -1,0 +1,24 @@
+Modelo Lógico
+
+Medicamento
+•	id (Chave Primária)
+•	nomeComercial
+•	controlado (booleano)
+•	formaApresentacao (ampola, comprimido, bisnaga, etc)
+•	viaAdministracao (via oral, intravenosa, dermatológica, etc)
+•	nomesimilar
+
+PrincipioAtivo
+•	Id (Chave Primária)
+•	nomeDCB (Denominação Comum Brasileira)
+
+Medicamento_PrincipioAtivo
+•	medicamento_ID (Chave Estrangeira para Medicamento)
+•	principioAtivo_ID (Chave Estrangeira para Princípio Ativo)
+•	concentracaoo
+•	unidade
+
+Hospital_Medicamento
+•	hospital_ID (Chave Estrangeira para Hospital)
+•	medicamento_ID (Chave Estrangeira para Medicamento)
+•	dataCadastro
