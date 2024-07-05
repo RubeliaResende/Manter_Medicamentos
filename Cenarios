@@ -1,0 +1,57 @@
+Cenários
+
+CENÁRIO 1: CADASTRO DE UM NOVO MEDICAMENTO COM TODOS OS CAMPOS PREENCHIDOS
+Dado que um usuário está na página de cadastro de medicamentos
+Quando ele preenche todos os campos obrigatórios (Nome Comercial, Controlado, Formas de Apresentação, Vias de Administração, Nomes Similares)
+E adiciona um ou mais princípios ativos com suas respectivas concentrações e unidades
+E clica no botão "Salvar"
+Então o sistema deve validar a padronização dos princípios ativos conforme a Denominação Comum Brasileira (DCB)
+E deve salvar o medicamento no banco de dados
+E deve exibir uma mensagem de confirmação de sucesso
+
+CENÁRIO 2: CADASTRO DE UM MEDICAMENTO COM PRINCÍPIO ATIVO NÃO PADRONIZADO
+Dado que um usuário está na página de cadastro de medicamentos
+Quando ele preenche todos os campos obrigatórios
+E adiciona um princípio ativo com um nome que não segue a Denominação Comum Brasileira (DCB)
+E clica no botão "Salvar"
+Então o sistema deve exibir uma mensagem de erro indicando que o nome do princípio ativo não está padronizado
+E deve impedir o salvamento do medicamento até que o princípio ativo esteja padronizado
+
+CENÁRIO 3: TENTATIVA DE CADASTRO DE MEDICAMENTO COM CAMPOS OBRIGATÓRIOS AUSENTES
+Dado que um usuário está na página de cadastro de medicamentos
+Quando ele tenta salvar um medicamento sem preencher todos os campos obrigatórios (Nome Comercial, Controlado, Formas de Apresentação, Vias de Administração)
+Então o sistema deve exibir uma mensagem de erro indicando quais campos obrigatórios estão ausentes
+E deve impedir o salvamento do medicamento até que todos os campos obrigatórios estejam preenchidos
+
+CENÁRIO 4: BUSCA DE MEDICAMENTO POR NOME COMERCIAL
+Dado que um usuário está na página de busca de medicamentos
+Quando ele insere um nome comercial no campo de busca
+E clica no botão "Buscar"
+Então o sistema deve exibir uma lista de medicamentos que correspondem ao nome comercial pesquisado
+
+CENÁRIO 5: BUSCA DE MEDICAMENTO POR PRINCÍPIO ATIVO
+Dado que um usuário está na página de busca de medicamentos
+Quando ele insere o nome de um princípio ativo no campo de busca
+E clica no botão "Buscar"
+Então o sistema deve exibir uma lista de medicamentos que contêm o princípio ativo pesquisado
+
+Cenário 6: Busca de medicamento por forma de apresentação e via de administração
+Dado que um usuário está na página de busca de medicamentos
+Quando ele seleciona uma forma de apresentação (ex: comprimido) e uma via de administração (ex: via oral) nos filtros de busca
+E clica no botão "Buscar"
+Então o sistema deve exibir uma lista de medicamentos que correspondem aos critérios de busca selecionados
+
+CENÁRIO 7: ATUALIZAÇÃO DE DADOS DE UM MEDICAMENTO EXISTENTE
+Dado que um usuário está na página de detalhes de um medicamento
+Quando ele altera um ou mais campos do medicamento (ex: Nome Comercial, Controlado, Formas de Apresentação, Vias de Administração, Nomes Similares)
+E clica no botão "Salvar"
+Então o sistema deve validar as alterações
+E deve atualizar o medicamento no banco de dados
+E deve exibir uma mensagem de confirmação de sucesso
+
+CENÁRIO 8: EXCLUSÃO DE UM MEDICAMENTO
+Dado que um usuário está na página de detalhes de um medicamento
+Quando ele clica no botão "Excluir"
+E confirma a exclusão na janela de confirmação
+Então o sistema deve remover o medicamento do banco de dados
+E deve exibir uma mensagem de confirmação de sucesso
