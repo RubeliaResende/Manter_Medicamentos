@@ -3,3 +3,29 @@ Protótipo
 Link do Figma:
 
 https://www.figma.com/design/EgnBiVCEcQb4IgnoYtEJxm/Projeto-1?node-id=31-2&t=tEMbCLzjGve6m9bd-1
+
+OBS:
+
+TELA 02 - Editar de Medicamento
+- Mesma estrutura da tela de cadastro, permitindo ATUALIZAÇÃO dos campos.
+
+TELA 04 - Visualizar  de Medicamento
+Estrutura da “área dos campos” igual a tela cadastro:
+- permite somente VISULAZAÇÃO dos campos.
+- TROCA de botões pelo botão <VOLTAR>
+
+TELA 05 - Buscar Medicamento
+- Busca de Medicamentos pelo <campo pesquisa>:
+Usuário preenche o <campo de pesquisa> 
+Usuário pressiona <enter>
+Sistema procura em todos os campos 
+Sistema retorna listagem
+Botão <baixar> é habilitado
+Dados completos da listagem podem ser baixados na “mesma forma do relatório”
+
+- Busca de Medicamentos por <filtro>:
+Usuário escolhe opções no <campo dos filtros>
+Sistema apresenta dinamicamente à cada filtro selecionado 
+Sistema retorna listagem
+Botão <baixar> é habilitado
+Dados completos da listagem podem ser baixados na “mesma forma do relatório”
