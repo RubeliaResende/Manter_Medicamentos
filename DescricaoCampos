@@ -1,0 +1,66 @@
+Descrição dos Campos
+
+Label: Nome Comercial
+•	Nome: Nome Comercial
+•	Tipo/Tamanho: Texto, 100 caracteres
+•	Máscara: Não aplicável
+•	Hint: "Insira o nome comercial do medicamento"
+
+Label: Controlado
+•	Nome: Controlado
+•	Tipo/Tamanho: Booleano
+•	Máscara: Não aplicável
+•	Hint: "Indique se o medicamento é controlado"
+
+Label: Formas de Apresentação
+•	Nome: Formas de Apresentação
+•	Tipo/Tamanho: Lista de seleção múltipla, opções pré-definidas (ampola, comprimido, bisnaga, etc)
+•	Máscara: Não aplicável
+•	Hint: "Selecione as formas de apresentação do medicamento"
+
+Label: Vias de Administração
+•	Nome: Vias de Administração
+•	Tipo/Tamanho: Lista de seleção múltipla, opções pré-definidas (via oral, intravenosa, dermatológica, etc) 
+•	Máscara: Não aplicável
+•	Hint: "Selecione as vias de administração do medicamento"
+
+Label: Nomes Similares
+•	Nome: Nomes Similares
+•	Tipo/Tamanho: Texto, 200 caracteres
+•	Máscara: Não aplicável
+•	Hint: "Insira possíveis nomes similares do medicamento"
+
+Label: Princípio Ativo
+•	Nome: Princípio Ativo
+•	Tipo/Tamanho: Texto, 100 caracteres
+•	Máscara: Não aplicável
+•	Hint: " "
+
+Label: Número do Princípio Ativo
+•	Nome: Número Princípio Ativo
+•	Tipo/Tamanho: Texto, 5 caracteres
+•	Máscara: Não aplicável
+•	Hint: "Insira o número do princípio ativo conforme DCB"
+
+Label: Concentração
+•	Nome: Concentração
+•	Tipo/Tamanho: Numérico, 10 caracteres
+•	Máscara: NNN,NN (ex: 250,00)
+•	Hint: "Insira a concentração do princípio ativo"
+
+Label: Unidade
+•	Nome: Unidade
+•	Tipo/Tamanho: Texto, 10 caracteres
+•	Máscara: Não aplicável
+•	Hint: "Insira a unidade da concentração (DCB)"
+
+Label: Nome do Hospital
+•	Nome: Nome do Hospital
+•	Tipo/Tamanho: Texto, 100 caracteres
+•	Máscara: Não aplicável
+•	Hint: "Insira o nome do hospital"
+
+Label:   (capturada automaticamente pelo sistema)
+•	Nome: Data de Cadastro
+•	Tipo/Tamanho: Data
+•	Máscara: DD/MM/AAAA
