@@ -1,0 +1,14 @@
+HISTÓRIA DO USUÁRIO E CRITÉRIOS DE ACEITAÇÃO
+
+História de Usuário
+ID: HU001
+TÍTULO: CADASTRO E MANUTENÇÃO DE MEDICAMENTOS
+Como usuário da manutenção do Cadastro de Medicamentos, quero cadastrar e manter medicamentos de maneira padronizada, para garantir a consistência dos dados entre os hospitais e facilitar a busca e atualização das informações dos medicamentos.
+
+Critérios de Aceitação
+1.	O sistema deve permitir o cadastro de medicamentos com todos os campos obrigatórios preenchidos.
+2.	O sistema deve validar a padronização dos princípios ativos conforme a Denominação Comum Brasileira (DCB).
+3.	O sistema deve exibir mensagens de erro indicando campos obrigatórios ausentes ou princípios ativos não padronizados.
+4.	O sistema deve permitir a busca de medicamentos por nome comercial, princípio ativo, forma de apresentação e via de administração.
+5.	O sistema deve permitir a atualização dos dados de um medicamento existente.
+6.	O sistema deve permitir a exclusão de medicamentos.
